@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Game</title>
+        <link rel="stylesheet" href="master.css">
+    </head>
+    <body style="margin: 0;">
+        <div id="toolbar">
+            <div id="clrChoose" class="inline-class">
+                 <!--<label>SelectColor: </label><select id="color" onchange="changeColor()">
+                                <option value="red">red</option>
+                                <option value="blue">blue</option>
+                                <option value="green">green</option>
+                                <option value="orange">orange</option>
+                                <option value="black" selected>black</option>
+                                </select> -->
+                <label>Pick Color: </label><input type="color" id="colors" defaultvalue="#000000" onchange="changeColor(this.value)">
+            </div>
+            <div id="radControl" class="inline-class">
+                Radius:<span id="radval">10</span>
+                <div id="incrad" class="radbtn">+</div>
+                <div id="decrad" class="radbtn">-</div>
+            </div>
+            <div id="clrbtn" class="inline-class">Clear</div>
+        </div>
+  
+        <canvas id="canvas"></canvas>
+        <script src="main.js"></script>
+        <script src="radius.js"></script>
+    </body>
+</html>
